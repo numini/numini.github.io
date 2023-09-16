@@ -1,0 +1,136 @@
+<html>
+<head>
+    <title>Nuel Studios News</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<header>
+<img src="numinilogo.png" width="700" height="700" style="display:block; margin:auto;">
+<body>
+	<script>
+        function searchText() {
+            var searchTerm = document.getElementById("searchInput").value.toLowerCase();
+            var posts = document.querySelectorAll(".post");
+            var searchResult = document.getElementById("searchResult");
+
+            // Hapus hasil pencarian sebelumnya
+            searchResult.innerHTML = '';
+
+            var found = false;
+
+            posts.forEach(function(post) {
+                var postContent = post.innerText.toLowerCase();
+                if (postContent.includes(searchTerm)) {
+                    found = true;
+                    searchResult.innerHTML += '<div class="searched-post">' + post.innerHTML + '</div>';
+                }
+            });
+
+            if (!found) {
+                searchResult.innerHTML = '<p>Tidak ada hasil yang ditemukan.</p>';
+            }
+        }
+    </script>
+    <input type="text" id="searchInput" placeholder="Cari..." style="display:block; margin:auto;" width="200">
+    <button onclick="searchText()" style="display:block; margin:auto;" {font-size: 24px;}>Cari</button>
+    <style>
+    	.button{
+    	padding: 15px 32px;
+        
+
+
+margin: 4px 2px;
+    }
+    	</style>
+
+<h3>Hasil Pencarian Muncul Disini</h3>
+    <div id="searchResult"></div>
+    
+    
+
+    <!-- Daftar posting (konten) -->
+    <div id="content">
+        	<header>
+<h2>Artikel Baru</h2>
+    </header>
+        <!-- Tambahkan posting lain di sini -->
+        	<div class="post">
+        	
+        
+        	<main>
+	        <article>
+        	
+          	<a href="https://www.youtube.com" style="color:blue" text-decoration:none >
+            <img src="yt.png" align="left" width="200">
+             	<h1 ></h1>
+             <h1></h1>
+             <h1>Youtube</h1>
+           <p style="font-size: 35px;" ><font face="Georgia">Bagikan video Anda dengan teman, keluarga, dan dunia.</p></font>
+        </article>        
+    </main>
+    </div>
+        	        <div class="post">
+	<main>
+	        <article>
+             <img src="yt.png" align="left" width="200">
+             	<h3 style="font-size: 35px;">Youtube</h3>
+           <p style="font-size: 30px;" ><font face="Georgia" style="color:black;">YouTube adalah sebuah situs web berbagi video yang dibuat oleh tiga mantan karyawan PayPal pada Februari 2005. Situs web ini memungkinkan pengguna mengunggah, menonton, dan berbagi video.</p></font>
+        </article>        
+    </main>
+    </div>
+    
+        	        
+    
+        	        <div class="post">
+	<main>
+	        <article>
+        	
+          	<a href="https://www.remove.bg" style="color:blue" text-decoration:none >
+             <img src="unnamed.png" align="left" width="200">
+             	<h3 style="font-size: 40px;">Remove Background</h3>
+             <p style="font-size: 35px;">Remove Bg</p>
+           <p style="font-size: 35px;" ><font face="Georgia">Hapus Background foto kamu untuk mempercantik foto anda</p></font>
+        </article>        
+    </main>
+    </div>
+    
+<div class="post">
+	<main>
+	        <article>
+        	
+          	<a href="https://www.google.com/amp/s/kaltara.tribunnews.com/amp/2023/09/16/alasan-teco-bali-united-dipermalukan-rans-di-liga-1-arsitek-privat-mbarga-cs-bongkar-biang-kerok" style="color:blue" text-decoration:none >
+             <img src="ssc.webp" width="500" style="display:block; margin:auto;">
+             	<img src="tribunkaltara.svg" width="350">
+             	<h3>RansNusantara News</h3>
+           <p style="font-size: 35px;" ><font face="Georgia">Alasan Teco, Bali United Dipermalukan RANS di Liga 1</p></font>
+            <p style="font-size: 35px;" ><font face="Georgia">Arsitek Privat Mbarga Cs Bongkar Biang Kerok</p></font>
+        </article>
+        </main>
+        </div> 
+    <div class="post">
+<main>
+        <article>
+        	<a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://play.google.com/store/apps/details%3Fid%3Dcom.mobile.legends%26hl%3Did%26gl%3DUS%26referrer%3Dutm_source%253Dgoogle%2526utm_medium%253Dorganic%2526utm_term%253Dmobile%2Blegends%26pcampaignid%3DAPPU_1_K0EFZc-5DIngseMPkdSHuAI&ved=2ahUKEwiP-5Xttq6BAxUJcGwGHRHqAScQ44QBegQIEhAG&usg=AOvVaw0_4D2G9gQoxtA0-TfdbaAE" style="color:black" text-decoration:none > <img src="icon.webp" align="left" width="130">
+        	<h2> Mobile Legends Bang Bang</h2>
+        <h1 > Moonton</h1>
+        <h1 style="color: blue;"> Donwload Sekarang</h1>
+        </article>
+    </main>
+    </div>
+    <div class="post">
+<main>
+        <article>
+        	<img src="Mobilelegends.png" align="right" width="300">
+        	    	<h3 style="color:black;">Mobile Legends</h3>
+        <h2 style="font-size: 30px;"> Moonton</h2>
+        	<p style="font-size: 20px;">Dirilis pada tahun 2016, game ini semakin populer di seluruh dunia, terutama di wilayah Asia Tenggara dan sejak itu telah melampaui 1 miliar kali unduhan, dengan puncak pemain bulanan sebanyak 100 juta. Pada tahun 2021, "Mobile Legends: Bang Bang" mencapai pendapatan kotor sepanjang masa sebesar US$1 miliar dengan 44 persen pendapatannya berasal dari luar Asia, menjadikannya gim seluler teratas dari genre-nya dengan daya tarik paling global.</p>
+        
+        </article>
+    </main>
+    </div>
+    <footer>
+        <p style="color:white;">Hak Cipta &copy; 2023 NuMini</p>
+        <h2 style="color:white;">Beta Version</h2>
+    </footer>
+</body>
+</html>
+
