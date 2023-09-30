@@ -1,131 +1,39 @@
+<!DOCTYPE html>
 <html>
+	<header>
 <head>
-	<meta name="google-site-verification" content="ge_P-O9tOyv6O9C8y0BztlKthLef5Xlw0dxGPgqxmvM" />
+<meta name="google-site-verification" content="ge_P-O9tOyv6O9C8y0BztlKthLef5Xlw0dxGPgqxmvM" />
 	<title>Numini Indonesia</title>
 <meta name="description" content="Search Your Need in Numini"/>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4518730671724891"
      crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<header>
 <img src="numinilogo.png" width="700" height="700" style="display:block; margin:auto;">
 <body>
-	<script>
-        function searchText() {
-            var searchTerm = document.getElementById("searchInput").value.toLowerCase();
-            var posts = document.querySelectorAll(".post");
-            var searchResult = document.getElementById("searchResult");
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Cari..." />
+    <button onclick="search()">Cari</button>
+  </div>
 
-            // Hapus hasil pencarian sebelumnya
-            searchResult.innerHTML = '';
-
-            var found = false;
-
-            posts.forEach(function(post) {
-                var postContent = post.innerText.toLowerCase();
-                if (postContent.includes(searchTerm)) {
-                    found = true;
-                    searchResult.innerHTML += '<div class="searched-post">' + post.innerHTML + '</div>';
-                }
-            });
-
-            if (!found) {
-                searchResult.innerHTML = '<p>Tidak ada hasil yang ditemukan.</p>';
-            }
-        }
-    </script>
-    <input type="text" id="searchInput" placeholder="Cari..." style="display:block; margin:auto;" width="200">
-    <button onclick="searchText()" style="display:block; margin:auto;" {font-size: 24px;}>Cari</button>
-    <style>
-    	.button{
-    	padding: 15px 32px;
-        
-
-
-margin: 4px 2px;
-    }
-    	</style>
-
-<h3 style="font-size: 40px;">Hasil Pencarian Muncul Disini</h3>
-    <div id="searchResult"></div>
-    <main>
-	    <article>
-		    <h2>Numini Search And Go</h2>
-		    <h2>Adalah Suatu Website Searching Dari Indonesia yang dibuat oleh anak smp bernama Immanuel Bintang Barasa,awalnya searching system disini susah untuk dijangkau tapi dipelajari oleh Numini da berhasil</h2>
-	    </article>
-    </main>
-   
-    
+  <div class="blog-posts">
+  	
+  <div class="post" data-tags="koran-gala">
+<article>
 <main>
-	    <article>
-		    <h2>Update 2.3</h2>
-		    <h3>- Memperbaiki image</h3>
-			    <h3>- Pencarian Diperketat</h3>
-	    </article>
+        	<a href="https://www.koran-gala.id/gala-ragam/58710177934/resep-bolu-keju-mini-empuk-dan-lembut-mudah-diikuti-pemula-anti-bantat-bisa-buat-ide-jualan-cupcake">
+        	<img src="korangala.jpg" align="left" width="120">
+            <h2>KoranGala</h2>
+        	<p style="font-size: 20px;"><font face="georgia">KoranGala.id - menyajikan berita terkini dan terhangat untuk para pembaca dimana pun berada, khususnya berita persib, bandung, jawa barat dan indonesia.</p></font>
+      
+		</a>
     </main>
-    <!-- Daftar posting (konten) -->
-    <div id="content">
-        	<header>
-<h2 style="font-size: 45px;">Artikel Baru</h2>
-    </header>
-        <!-- Tambahkan posting lain di sini -->
-	    
-	    <div class="post">  
-		        <div class="post">
-    	<article>
-    	<main>
-    	
-    	<img src="https://upload.wikimedia.org/wikipedia/id/thumb/b/bf/UEFA_Champions_League_logo_2.svg/800px-UEFA_Champions_League_logo_2.svg.png" width="300" align="center">
-<h2>Liga Championsip Eropa</h2>
-<h3>Sebuah Turnamen Di Eropa</h3>
-    <p style="font-size: 45px"><font face="Georgia">Liga Champions UEFA atau Liga Champions Eropa yang sebelumnya bernama Piala Eropa adalah sebuah kompetisi sepak bola antarklub oleh UEFA dan diikuti oleh klub dari liga atau divisi tertinggi Eropa</p></font>
+	</article>
+    </div>
     
-    <h3 style="font-size: 0px">Ucl,Uefa</h3>
-    </main>
-    </article>
-    	</div>
     
-    <div class="post">
-    	<article>
-    	<main>
-    	<a href="https://id.m.wikipedia.org/wiki/FC_Barcelona">
-    	<img src="https://upload.wikimedia.org/wikipedia/id/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" width="350" align="center">
-<h2>Barcelona</h2>
-<h3>Sebuah Klub Di Laliga Spanyol</h3>
-    <p style="font-size: 45px"><font face="Georgia">Fútbol Club Barcelona, juga dikenal sebagai Barcelona atau Barça, adalah klub sepak bola profesional yang berbasis di Barcelona, Catalunya, Spanyol, yang ikut serta di kompetisi tertinggi sepak bola Spanyol, La Liga. </p></font>
     
-    <h3 style="font-size: 0px">Barca,Barcelona,Decul</h3>
-    </main>
-    </article>
-    	</div>
-    
-
-
-
-		    
-        	<article>
-        	<main>
-        	<a href="https://sport.detik.com/sepakbola/liga-inggris/d-6939722/guardiola-puji-jeremy-doku-tinggi-tinggi">
-        	<h2 align="center" style="color: blue;">Guardiola Puji Jeremy Doku Tinggi-tinggi</h2>
-        <p style="font-size: 20px;" ><font face="Georgia">Pep Guardiola memuji Jeremy Doku setinggi langit. Baginya, pemain baru Manchester City itu sungguh winger yang jempolan!</p></font>
-        	</main>
-        	</article>
-	    </div>
-
-	       <div class="post">
-    	<article>
-    	<main>
-    	<a href="https://www.bolasport.com/read/313895014/pecah-telur-sekali-man-city-kini-dianggap-bisa-jadi-kolektor-liga-champions">
-    	<img src="https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/2023/08/27/pep-guardiolajpg-20230827102020.jpg" width="350" align="center">
-    <img src="https://asset-a.grid.id/file/bolasport/mobile/imgs/logobolasport.png" width="150"></img>
-    <p style="font-size: 35px"><font face="Georgia">Pecah Telur Sekali, Man City Kini Dianggap Bisa Jadi Kolektor Liga Champions</p></font>
-    
-    <h3 style="font-size: 1px">Manchester City,Man City,City,Ucl,Pep Guardiola</h3>
-    </main>
-    </article>
-    	</div>
-    
-    <div class="post">
+    <div class="post" data-tags="Manchester United Mu">
     	<article>
     	<main>
     	<a href="https://id.m.wikipedia.org/wiki/Manchester_United_F.C.">
@@ -138,7 +46,114 @@ margin: 4px 2px;
     </main>
     </article>
     	</div>
-    <div class="post">
+    
+    
+     <div class="post" data-tags="Cnn">
+    	<article>
+    	<main>
+    	<a href="https://www.cnnindonesia.com/">
+    	<img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/CNN_Indonesia.svg/1200px-CNN_Indonesia.svg.png" width="350" align="center">
+<h2>Cnn</h2>
+<h3>Cnn Indonesia</h3>
+    <p style="font-size: 45px"><font face="Georgia">CNNIndonesia.com menyajikan berita Terbaru, Terkini Indonesia seputar nasional, politik, ekonomi, internasional, olahraga, teknologi, hiburan, gaya hidup.</p></font>
+   
+    </main>
+    </article>
+    	</div>  
+    
+    
+    
+      <div class="post" data-tags="Ucl Uefa">
+    	<article>
+    	<main>    	
+    	<img src="https://upload.wikimedia.org/wikipedia/id/thumb/b/bf/UEFA_Champions_League_logo_2.svg/800px-UEFA_Champions_League_logo_2.svg.png" width="300" height="250" align="center">
+<h2>Liga Championsip Eropa</h2>
+    <p style="font-size: 45px"><font face="Georgia">Liga Champions UEFA atau Liga Champions Eropa yang sebelumnya bernama Piala Eropa adalah sebuah kompetisi sepak bola antarklub oleh UEFA dan diikuti oleh klub dari liga atau divisi tertinggi Eropa</p></font>    
+ <h3>Juara Saat Ini = Manchester City</h3>
+    </main>
+    </article>
+    	</div>
+    
+          
+    
+    <div class="post" data-tags="Wolverhampton Vs City,Wolver Vs City ">      
+        	<article>
+        	<main>
+        	<a href="https://www.bolasport.com/read/313904268/wolverhampton-wanderers-vs-man-city-kalau-menang-pep-guardiola-bakal-bawa-the-citizens-ukir-sejarah-baru">
+        	<h2 align="center" style="color: blue;">Bola.net</h2>
+        <p style="font-size: 20px;" ><font face="Georgia">Wolverhampton Wanderers vs Man City - Kalau Menang, Pep Guardiola bakal Bawa The Citizens Ukir Sejarah Baru</p></font>
+        	</main>
+        	</article>
+	    </div>
+    
+    <div class="post" data-tags="Real Madrid">
+    	<article>
+    	<main>
+    	<a href="https://id.m.wikipedia.org/wiki/Real_Madrid_C.F.">
+    	<img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png" width="300" align="center">
+<h2>Real Madrid</h2>
+<h3>Klub Bermain Di Laliga Spanyol</h3>
+    <p style="font-size: 35px"><font face="Georgia">Real Madrid Club de Fútbol, umumnya dikenal sebagai Real Madrid, adalah klub sepak bola profesional yang berbasis di Madrid, Spanyol. Didirikan pada tahun 1902 sebagai Madrid Football Club, secara tradisional mengenakan kostum kandang putih</p></font>
+   </a>
+ </main>
+   
+    </article>
+    </div>
+    
+    
+    <div class="post" data-tags="Liverpool Ipul">
+    	<article>
+    	<main>
+    	<img src="https://upload.wikimedia.org/wikipedia/id/thumb/0/0c/Liverpool_FC.svg/1200px-Liverpool_FC.svg.png" width="300" align="center">
+<h3>Liverpool</h3>
+<h3>Klub Bermain Di Premier League</h3>
+    <p style="font-size: 25px"><font face="Georgia">Liverpool Football Club adalah sebuah klub sepak bola profesional asal Inggris yang berbasis di Liverpool. </p></font>
+   <p></p>
+   <p>Manajer: Jürgen Klopp</p>
+    </main>
+    </article>
+    </div>
+    
+    <div class="post" data-tags="ml MobileLegends">
+    <article>
+<main>
+     
+        	<img src="Mobilelegends.png" align="right" width="300">
+        	    	<h3 style="color:black;">Mobile Legends</h3>
+        <h2 style="font-size: 30px;"> Moonton</h2>
+        	<p style="font-size: 15px;">Dirilis pada tahun 2016, game ini semakin populer di seluruh dunia, terutama di wilayah Asia Tenggara dan sejak itu telah melampaui 1 miliar kali unduhan, dengan puncak pemain bulanan sebanyak 100 juta. Pada tahun 2021, "Mobile Legends: Bang Bang" mencapai pendapatan kotor sepanjang masa sebesar US$1 miliar dengan 44 persen pendapatannya berasal dari luar Asia, menjadikannya gim seluler teratas dari genre-nya dengan daya tarik paling global.</p>
+        
+       
+    </main>
+    </article>
+    </div>
+    
+    
+ <div class="post" data-tags="Manchester City ">
+    	<article>
+    	<main>
+    	<a href="https://www.bolasport.com/read/313895014/pecah-telur-sekali-man-city-kini-dianggap-bisa-jadi-kolektor-liga-champions">
+    	<img src="https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/2023/08/27/pep-guardiolajpg-20230827102020.jpg" width="350" align="center">
+    <img src="https://asset-a.grid.id/file/bolasport/mobile/imgs/logobolasport.png" width="150"></img>
+    <p style="font-size: 35px"><font face="Georgia">Pecah Telur Sekali, Man City Kini Dianggap Bisa Jadi Kolektor Liga Champions</p></font>
+    </main>
+    </article>
+    	</div>
+
+  <div class="post" data-tags="Barcelona Barca Decul">
+    	<article>
+    	<main>
+    	<a href="https://id.m.wikipedia.org/wiki/FC_Barcelona">
+    	<img src="https://upload.wikimedia.org/wikipedia/id/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" width="350" align="center">
+<h2>Barcelona</h2>
+<h3>Sebuah Klub Di Laliga Spanyol</h3>
+    <p style="font-size: 45px"><font face="Georgia">Fútbol Club Barcelona, juga dikenal sebagai Barcelona atau Barça, adalah klub sepak bola profesional yang berbasis di Barcelona, Catalunya, Spanyol, yang ikut serta di kompetisi tertinggi sepak bola Spanyol, La Liga. </p></font>
+    
+    
+    </main>
+    </article>
+    	</div>  
+    <div class="post" data-tags="Pep Guardiola">
     	<article>
     	<main>
     	<a href="https://id.m.wikipedia.org/wiki/Pep_Guardiola">
@@ -146,12 +161,40 @@ margin: 4px 2px;
 <h2>Pep Guardiola</h2>
 <h3>Pelatih Manchester City</h3>
     <p style="font-size: 35px"><font face="Georgia">merupakan seorang mantan pemain sepak bola Barcelona, yang sejak 2016 melatih Manchester City. Ia dahulu berposisi sebagai Gelandang bertahan. </p></font>
-    
-    <h3 style="font-size: 1px">Pep Guardiola,pelatih city,pelatih man city,pelatih manchester city,mantan pelatih bayern</h3>
+   
     </main>
     </article>
 	</div>
-        <div class="post">
+	
+	<div class="post" data-tags="BOKEP18,Slot,Bandar Slot,Xxnx,PornHub,bkp">
+    	<article>
+    	<main>
+    	
+ <h1>Situs Itu Diblokir oleh Numini Indonesia</h1>
+ <h2>Halalkan Imanmu | Numini Indonesia</h2>
+ 
+   
+ </main>
+    </article>
+	</div>
+	
+	
+	  <div class="post" data-tags="Goal.com JordiAmat">
+    	<article>
+    	<main>
+    	<a href="https://www.goal.com/id/berita/jordi-amat-akui-bakal-jungkir-balik-hadapi-serbuan-kawasaki-frontale/bltf433f053138bd7d9">
+
+    	<img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blte51c555e2aa840ca/6508df354fd9206d47fa66bf/Jordi_Amat.jpg?auto=webp&format=pjpg&width=1080&quality=60" align="center" width="350" height="300">
+    <p>Goal.com</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNjmCBm6ClmXOEhHscF4ZudQLrCp9yAwoeLQ&usqp=CAU" width="100"></img>
+    <p style="font-size: 30px"><font face="Georgia">Jordi Amat Akui Bakal Jungkir Balik Hadapi Serbuan Kawasaki Frontale
+</p></font>
+<h3>Dony Afroni</h3>
+    </main>
+    </article>
+    	</div>
+	
+	        <div class="post" data-tags="Erling Haaland">
     	<article>
     	<main>
     	<a href="https://id.m.wikipedia.org/wiki/Erling_Haaland">
@@ -162,209 +205,40 @@ margin: 4px 2px;
     </main>
     </article>
 	</div>
-        <div class="post">
-    	<article>
-    	<main>
-    	<a href="https://www.goal.com/id/berita/jordi-amat-akui-bakal-jungkir-balik-hadapi-serbuan-kawasaki-frontale/bltf433f053138bd7d9">
-
-    	<img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blte51c555e2aa840ca/6508df354fd9206d47fa66bf/Jordi_Amat.jpg?auto=webp&format=pjpg&width=1080&quality=60" align="center" width="350" height="300">
-    <p>Goal.com</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNjmCBm6ClmXOEhHscF4ZudQLrCp9yAwoeLQ&usqp=CAU" width="100"></img>
-    <p style="font-size: 30px"><font face="Georgia">Jordi Amat Akui Bakal Jungkir Balik Hadapi Serbuan Kawasaki Frontale
-</p></font>
-<h2>Dony Afroni</h2>
-    </main>
-    </article>
-    	</div>
-        <div class="post">
-	        <article>	
-	<main>
-          	<a href="dokumen.html" style="color:blue" text-decoration:none >
-  
-            <img src="nugo.png" align="right" width="160">
-             	<h1 >Numini Dokument</h1>
- 
-           <p style="font-size: 35px;" ><font face="Georgia">Buka Dokumen Anda Tanpa Ribet Dan Mengunduh aplikasi!</p></font>
-        </main>
-    </article>
-    </div>
-    
-    <h2></h2>
-    
-    <div class="post">
-    	<article>
-    	<main>
-    	<a href="https://sport.detik.com/sepakbola/liga-inggris/d-6937022/saat-haaland-tidak-curi-gol-bernardo-silva">
-    	<img src="https://akcdn.detik.net.id/community/media/visual/2023/09/18/erling-haaland.jpeg?w=600&q=90" align="center" width="750">
-    <img src="sepakbola.png" align="center" weidth="100"></img>
-    <p style="font-size: 35px"><font face="Georgia">Saat Haaland Tidak Curi Gol Bernardo Silva</p></font>
-    </main>
-    </article>
-    	</div>
-    
-        	<h2></h2>
-        <div class="post">
+	
+	
+	
+	<div class="post" data-tags="Cnn Timor Leste">      
+        	<article>
         	<main>
-	        <article>   	
-          	<a href="https://m.vidio.com/watch/7664574-full-highlights-bali-united-fc-vs-rans-nusantara-fc-bri-liga-1-2023-2024?utm_source=google&utm_medium=post-game&utm_campaign=liga1-ID" style="color:blue" text-decoration:none >
-            <img src="bali.jpeg" align="center" width="700">
-             	<h1 ></h1>
-             <h1></h1>
-             <img src="vidio.png" align="center" width="200" alt="vidio">
-           <p style="font-size: 45px;" ><font face="Georgia">Rekap Bali United Vs Rans Nusantara</p></font></a>
-           <p style="font-size: 11px;">https://m.vidio.com</p>
-        </main>        
-    </article>
-    </div>
-        	<div class="post">      
-        	<main>
-	        <article>	
-          	<a href="https://sport.detik.com/sepakbola/bola-dunia/d-6931687/guardiola-jadi-pelatih-terboros-sepanjang-masa." style="color:blue" text-decoration:none >
-  
-            <img src="sepakbola.jpg" align="right" width="300">
-             	<h1 ></h1>
- <img src="sepakbola.png" align="center" width="150">
-           <p style="font-size: 35px;" ><font face="Georgia">Guardiola Jadi Pelatih Terboros Sepanjang Masa</p></font>
-        </main>        
-    </article>
-    </div>
-    
-    <h2></h2>
-    
-    <div class="post">
-    	<main>
-    	<article>
-        	
-          	<a href="https://www.youtube.com" style="color:blue" text-decoration:none >
-            <img src="yt.png" align="right" width="150">
-             	<h1 ></h1>
-             <h1></h1>
-             <h1>Youtube</h1>
-           <p style="font-size: 35px;" ><font face="Georgia">Bagikan video Anda dengan teman, keluarga, dan dunia.</p></font></a>
-        </article>        
-    </main>
-    </div>
-        	      
-    
-          <div class="post">
-	<main>
-	        <article>
-             <a href="https://www.google.com/amp/s/www.detik.com/sumbagsel/hukum-dan-kriminal/d-6931994/5-fakta-klinik-kecantikan-mawar-kusuma-berawal-dari-youtube-berujung-ditangkap/amp"><img src="mawar-kusuma-artis-bintang-pantura-5-1_169.avif" align="center" width="450">
-             	<img src="sumba.png" width="250">
-             	<h3 style="font-size: 35px;">Detiksumbagsel</h3>
-           <p style="font-size: 30px;" ><font face="Georgia" style="color:black;">5 Fakta Klinik Kecantikan Mawar Kusuma: Berawal dari YouTube, Berujung Ditangkap</p></font></a>
-        </article>        
-    </main>
-    </div>
-    
-        	        
-    
-        	        <div class="post">
-	<main>
-	        <article>
-        	
-          	<a href="https://www.remove.bg" style="color:blue" text-decoration:none >
-             <img src="unnamed.png" align="left" width="200">
-             	<h3 style="font-size: 40px;">Remove Background</h3>
-             <p style="font-size: 35px;">Remove Bg</p>
-           <p style="font-size: 35px;" ><font face="Georgia">Hapus Background foto kamu untuk mempercantik foto anda</p></font>
-        </article>        
-    </main>
-    </div>
-    
-<div class="post">
-	<main>
-	        <article>
-        	
-          	<a href="https://www.google.com/amp/s/kaltara.tribunnews.com/amp/2023/09/16/alasan-teco-bali-united-dipermalukan-rans-di-liga-1-arsitek-privat-mbarga-cs-bongkar-biang-kerok" style="color:blue" text-decoration:none >
-             <img src="ssc.webp" width="500" style="display:block; margin:auto;">
-             	<img src="tribunkaltara.svg" width="350">
-             	<h3>RansNusantara News</h3>
-           <p style="font-size: 35px;" ><font face="Georgia">Alasan Teco, Bali United Dipermalukan RANS di Liga 1</p></font>
-            <p style="font-size: 35px;" ><font face="Georgia">Arsitek Privat Mbarga Cs Bongkar Biang Kerok</p></font>
-        </article>
-        </main>
-        </div> 
-    <div class="post">
-<main>
-        <article>
-        	<a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://play.google.com/store/apps/details%3Fid%3Dcom.mobile.legends%26hl%3Did%26gl%3DUS%26referrer%3Dutm_source%253Dgoogle%2526utm_medium%253Dorganic%2526utm_term%253Dmobile%2Blegends%26pcampaignid%3DAPPU_1_K0EFZc-5DIngseMPkdSHuAI&ved=2ahUKEwiP-5Xttq6BAxUJcGwGHRHqAScQ44QBegQIEhAG&usg=AOvVaw0_4D2G9gQoxtA0-TfdbaAE" style="color:black" text-decoration:none > <img src="icon.webp" align="left" width="130">
-        	<h2> Mobile Legends Bang Bang</h2>
-        <h1 > Moonton</h1>
-        <h1 style="color: blue;"> Donwload Sekarang</h1></a>
-        </article>
-    </main>
-    </div>
-    <h1></h1>
-    <div class="post">
-<main>
-        <article>
-        	<img src="Mobilelegends.png" align="right" width="300">
-        	    	<h3 style="color:black;">Mobile Legends</h3>
-        <h2 style="font-size: 30px;"> Moonton</h2>
-        	<p style="font-size: 15px;">Dirilis pada tahun 2016, game ini semakin populer di seluruh dunia, terutama di wilayah Asia Tenggara dan sejak itu telah melampaui 1 miliar kali unduhan, dengan puncak pemain bulanan sebanyak 100 juta. Pada tahun 2021, "Mobile Legends: Bang Bang" mencapai pendapatan kotor sepanjang masa sebesar US$1 miliar dengan 44 persen pendapatannya berasal dari luar Asia, menjadikannya gim seluler teratas dari genre-nya dengan daya tarik paling global.</p>
-        
-        </article>
-    </main>
-    </div>
-    
-    <div class="post">
-<main>
-        <article>
-        	<a href="https://www.koran-gala.id/gala-ragam/58710177934/resep-bolu-keju-mini-empuk-dan-lembut-mudah-diikuti-pemula-anti-bantat-bisa-buat-ide-jualan-cupcake">
-        	<img src="bolu.webp" align="right" width="300">
-        	<img src="logo.png" width="300">
-        	<h1>Koran Gala</h1>
-        	<p style="font-size: 11px;"><font face="georgia">Resep Bolu Keju Mini Lembut dan Empuk, Mudah Diikuti Pemula Anti Bantat Praktis Bisa Pake Cetakan untuk Jualan</p></font>
+        	<a href="https://www.cnnindonesia.com/internasional/20230929183011-106-1005350/bagaimana-nasib-timor-leste-setelah-21-tahun-lepas-dari-ri">
+        	<h2 align="center" style="color: blue;">Cnn Indonesia</h2>
+        <p style="font-size: 20px;" ><font face="Georgia">Bagaimana Nasib Timor Leste setelah 21 Tahun Lepas dari RI?</p></font>
         </a>
-		</main>
-        </article>
-    
-    </div>
-    
-        <div class="post">
-<main>
-        <article>
-        	<a href="https://www.koran-gala.id/gala-ragam/58710177934/resep-bolu-keju-mini-empuk-dan-lembut-mudah-diikuti-pemula-anti-bantat-bisa-buat-ide-jualan-cupcake">
-        	<img src="korangala.jpg" align="left" width="150">
-            <h2>KoranGala</h2>
-        	<p style="font-size: 13px;"><font face="georgia">KoranGala.id - menyajikan berita terkini dan terhangat untuk para pembaca dimana pun berada, khususnya berita persib, bandung, jawa barat dan indonesia.</p></font>
-      
-		</a>
+        	</main>
+        	</article>
+	    </div>
+  </div>
+
+  <script src="script.js"></script>
+      <main>
+	    <article>
+		    <h2>Numini Search And Go</h2>
+		    <h3 style="font-size: 15px;">Adalah Suatu Website Searching Dari Indonesia yang dibuat oleh anak smp </h3>
+	    </article>
     </main>
-	</article>
-    </div>
-    
-    <div class="post">
-    	<article>
-    	<main>
-    	
- <h1>Situs Itu Diblokir oleh Numini Indonesia</h1>
- <h2>Halalkan Imanmu | Numini Indonesia</h2>
- <p style="font-size: 0px;">BOKEP18,Slot,Bandar Slot,Xxnx,PornHub,bkp</p>
-   
- </main>
-    </article>
-	</div>
-    
-    <div class="post">
-    	<article>
-    	<main>
-    	<a href="https://id.m.wikipedia.org/wiki/Real_Madrid_C.F.">
-    	<img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png" width="300" align="center">
-<h2>Real Madrid</h2>
-<h3>Klub Bermain Di Laliga Spanyol</h3>
-    <p style="font-size: 35px"><font face="Georgia">Real Madrid Club de Fútbol, umumnya dikenal sebagai Real Madrid, adalah klub sepak bola profesional yang berbasis di Madrid, Spanyol. Didirikan pada tahun 1902 sebagai Madrid Football Club, secara tradisional mengenakan kostum kandang putih</p></font>
-    
-    <h3 style="font-size: 1px">Real Madrid,Madrid,LosGalactios,Fadrid</h3>
-    </main>
-    </article>
-	</div>
-    
     <footer>
+    	<body>
+    	<video width="350" height="350" controls>
+    <source src="vud.mp4" type="video/mp4" width="100">
+    
+  </video>
+  </body>
         <p style="color:white;">Hak Cipta &copy; 2023 NuMini</p>
         <h2 style="color:white;">Beta Version</h2>
 	    <a href="https://numini.github.io/privacy.html"><h3 style="color:blue;"> Privacy Policy Numini</h3></a>
     </footer>
 </body>
 </html>
+</header>
+
