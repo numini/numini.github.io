@@ -24,3 +24,12 @@ const searchInput = document.getElementById('searchInput');
 searchInput.addEventListener('keypress', handleKeyPress);
 
       
+function handleKeyPress(event) {
+  if (event.key === 'Enter') {
+    search();
+  }
+}
+
+const searchInput = document.getElementById('searchInput');
+searchInput.addEventListener('keydown', handleKeyPress);
+                
