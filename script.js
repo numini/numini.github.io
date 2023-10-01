@@ -19,3 +19,7 @@ function search() {
   });
 }
 
+
+const searchInput = document.getElementById('searchInput');
+searchInput.addEventListener('keypress', handleKeyPress);
+
