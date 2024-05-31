@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="id-ID">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kenu Store</title>
+	<link rel="canonical" href="https://gotopup.id" />
+	<link rel="shortcut icon" href="https://gotopup.id/assets/images/1709982174_36ccc3284a56977982f3.svg" style="border-radius: 5px;">
+    <meta name="description" content="GoTopup menyediakan layanan Top up game dan Reseller Voucher Game termurah dan terpercaya di Indonesia.">
+    <meta name="keyword" content="GoTopup, top up game, freefire, ff, mobile legend, Top up , Isi ulang , Voucher , Beli ">
+    <meta name="author" content="PT. Kiosweb Teknologi Indonesia">
+    <meta name="theme-color" content="#11143A" />
+    <meta name="robots" content="index, follow">
+    <meta content="desktop" name="device">
+    <meta name="coverage" content="Worldwide">
+    <meta name="apple-mobile-web-app-title" content="GoTopup.id — Top Up FC Mobile Termurah dan Instan">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gotopup.id">
+    <meta property="og:title" content="GoTopup.id — Top Up FC Mobile Termurah dan Instan">
+    <meta property="og:site_name" content="GoTopup.id - Top Up FC Mobile Termurah dan Instan">
+    <meta property="og:description" content="GoTopup menyediakan layanan Top up game dan Reseller Voucher Game termurah dan terpercaya di Indonesia.">
+    <meta property="og:image" content="https://gotopup.id/assets/images/banner/1709457675_394d229729dd19fb4563.png">
+    <meta property="og:image:alt" content="Top Up Game Favorit Kamu Di GoTopup.id Agar Main Game Semakin Seru. Pengiriman Cepat Dan Berbagai Methode Pembayaran Yang Lengkap. Tersedia Berbagai Macam Game Populer Seperti Mobile Legends, PUBG Mobile, Valorant, Dragon Nest 2, Metal Slug, Fc Mobile, Zepeto, Super Sus, State Of Survival, Clash Of Clans, Brawl Starts, Free Fire, Garena Undawn, Ragnarok Origin, Genshin Impact, Seal M Sea, Ace Racer, Tower Of Fantasy, Wild Rift, Arena Of Valor, Call Of Duty Mobile, Sausage Man Dan Berbagai Game Lainnya Yang Tidak Kalah Seru Untuk Kamu Mainkan.">
+	<link rel="stylesheet" href="npm/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" href="assets/css/toastr.min.css">
+	<link href="npm/bootstrap-5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="npm/bootstrap-icons-1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="https://cdn.kiosweb.id/libs/css/gotopup-1.2.css">
+    <link rel="stylesheet" href="https://cdn.kiosweb.id/libs/css/populer.css">
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Product",
+            "name": "Top Up Game",
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.7",
+                "reviewCount": "9728"
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://gotopup.id/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://www.google.com/search?q={search_term_string}+site:gotopup.id",
+                "query-input": "required name=search_term_string",
+                "input-placeholder": "Cari games favorit kamu"
+            }
+        }
+    </script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7F61ZZ1K4P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7F61ZZ1K4P');
+</script>    
+    <style>
+        ::-webkit-progress-bar {
+          background-color: var(--yellow-primary);
+        }
+    </style>
+</head>
+<body id="body">
+  <div id="progressBar"></div>
+  <button class="btn btn-primary d-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+</button>
+<div class="offcanvas offcanvas-start" style="z-index : 100 !important" data-bs-scroll="true" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-header">
+        <div class="d-flex align-items-center gap-2">
+            <span class="navigation">Navigation</span>
+        </div>
+        <label class="theme-switch">
+            <input class="toggle-checkbox" id="checkbox" type="checkbox">
+            <div class="switch-icon">
+                <i class="bi bi-brightness-high yellowprim"></i>
+            </div>
+        </label>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between">
+        <div class="link-list">
+            <a href="index.html" class="nav-item-link ">
+                <div class="icon-link">
+                    <i class="bi bi-house-door"></i>
+                </div>
+                <div class="title">Beranda</div>
+            </a>
+            <a href="price.html" class="nav-item-link ">
+                <div class="icon-link">
+                    <i class="bi bi-tags"></i>
+                </div>
+                <div class="title">Daftar Harga</div>
+            </a>
+            <a href="transaksi.html" class="nav-item-link ">
+                <div class="icon-link">
+                    <i class="bi bi-receipt-cutoff"></i>
+                </div>
+                <div class="title">Lacak Transaksi</div>
+            </a>
+            <a href="docs-sub/index.html" target="_blank" class="nav-item-link">
+                <div class="icon-link">
+                    <i class="bi bi-braces"></i>
+                </div>
+                <div class="title">Dokumentasi API</div>
+            </a>
+            <a href="kontak.html" class="nav-item-link ">
+                <div class="icon-link">
+                    <i class="bi bi-chat-left"></i>
+                </div>
+                <div class="title">Hubungi Kami</div>
+            </a>
+        </div>
+        <div class=" flex align-content-end">
+            <div class="d-flex gap-2 w-100">
+                                    <a type="button" href="account/auth/login.html" class="btnYellowPrimary d-inline-flex flex-fill px-3 w-100">Masuk</a>
+                    <a type="button" href="account/auth/register.html" class="btnYellowSecond d-inline-flex flex-fill px-3 w-100">Daftar</a>
+                                            </div>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container position-relative justify-content-md-center ">
+        <button class="search d-md-none d-block" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-search"></i>
+        </button>
+        <div class="d-flex align-items-center gap-2" id="navLogo">
+            <img hidden src="" onclick="window.location.href='index.html'" class="logo " alt="">
+            <a href="index.html><span class="logoName " onclick="window.location.href='index.html'">KENUSTORE</span></a>
+        </div>
+        <div class="collapse navbar-collapse order-2 " id="navbarNavDropdown">
+            <div class="py-3  d-flex d-md-none " id="navSearch">
+                <form action="search.html" method="GET" class=" w-100">
+                <div class="navSearch ">
+                    <input type="text" name="keyword" id="searchInput" value="" placeholder="Cari Game">
+                    <i class="bi bi-search"></i>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div class="navRight w-100 justify-content-end d-none d-md-flex">
+            <form action="search.html" method="GET">
+                <div class="navSearch">
+                    <input type="text" name="keyword" id="searchInput" value="" placeholder="Cari Game">
+                    <i class="bi bi-search"></i>
+                </div>
+            </form>
+                            <a href="account/auth/login.html" class="btnYellowPrimary login">Masuk</a>
+                <a href="account/auth/register.html" class="btnYellowSecond login">Daftar</a>
+            <div class="containerMenu">
+                <div class="dropdown">
+                    <button class="dropdownMenu shadow">
+                        <i class="bi bi-grid-fill"></i>
+                    </button>
+                    <div class="dropdown-content">
+                    <a href="index.html">
+                        <div class="containers">
+                            <i class="bi bi-house-door"></i>
+                            <div class="name">Beranda</div>
+                        </div>
+                        <i class="bi bi-arrow-right-short"></i>
+                    </a>
+                    <a href="price.html">
+                        <div class="containers">
+                            <i class="bi bi-tags"></i>
+                            <div class="name">Daftar Harga</div>
+                        </div>
+                        <i class="bi bi-arrow-right-short"></i>
+                    </a>
+                    <a href="transaksi.html">
+                        <div class="containers">
+                            <i class="bi bi-receipt-cutoff"></i>
+                            <div class="name">Lacak Pesanan</div>
+                        </div>
+                        <i class="bi bi-arrow-right-short"></i>
+                    </a>
+                    <a href="docs-sub/index.html" target="_blank">
+                        <div class="containers">
+                            <i class="bi bi-braces"></i>
+                            <div class="name">Dokumentasi API</div>
+                        </div>
+                        <i class="bi bi-arrow-right-short"></i>
+                    </a>
+                    <a href="kontak.html">
+                        <div class="containers">
+                            <i class="bi bi-chat-left"></i>
+                            <div class="name">Hubungi Kami</div>
+                        </div>
+                        <i class="bi bi-arrow-right-short"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <label class="theme-switch shadow">
+            <input class="toggle-checkbox" id="checkbox" type="checkbox">
+            <div class="switch-icon">
+                <i class="bi bi-brightness-high yellowprim"></i>
+            </div>
+        </label>
+    </div>
+    <!-- <input type="checkbox" role="button" aria-label="Display the menu order-1" class="menu d-md-none d-block" id="menuCheckbox"> -->
+    <button type="button" aria-label="Display the menu order-1" class="search d-md-none d-block" id="menuCheckbox">
+        <i class="bi bi-list"></i>
+    </button>
+</nav>
+  <div class="mobileNav" hidden>
+			<a href="m.html" class="containers ">
+				<i class="bi bi-house-door"></i>
+				<div class="text">Beranda</div>
+			</a>
+            <a href="price.html" class="containers ">
+				<i class="bi bi-tags"></i>
+				<div class="text">Pricelist</div>
+			</a>
+			<a href="transaksi.html" class="containers ">
+				<i class="bi bi-receipt-cutoff"></i>
+				<div class="text">Riwayat</div>
+			</a>
+			                <a href="account/auth/login.html" class="containers ">
+					<i class="bi bi-person-lock"></i>
+					<div class="text">Login</div>
+				</a>
+                          </div>
+  		<section>
+			<div class="container">
+				<div class="desc mb-3">
+                    <span class="txt-primary">
+                        <a href="index.html">Home</a>
+                    </span>
+                    <span class="mx-2">/</span>FC Mobile                </div>
+				<div class="containerAlpha">
+					<img src="https://gotopup.id/assets/images/banner/1710517665_dffbee3e4ccd136465c3.jpg" alt="" class="banner">
+					<div class="containerML">
+						<img src="https://gotopup.id/assets/images/icon/1710517665_0556d73f7846c209a6e6.png" alt="" class="logo-ml">
+					</div>
+				</div>
+				<form action="" method="POST" id="form-order">
+				<input type="hidden" name="product">
+				<input type="hidden" name="method">
+				<input type="hidden" name="nickname">
+				<div class="containerNominal">
+					<div class="row reverse">
+						<div class="col-lg-8">
+														<div class="cards py-3 mb-4">
+								<div class="title-card text-left">FC Mobile<span class="ms-2"><i class="bi bi-patch-check-fill" style="color: #179cf0"></i></span></div>
+								<div class="text" style="color: var(--black-text)">
+									<p>Top up FC Points EA SPORTS FC&trade; Mobile hanya dalam hitungan detik! Cukup masukan UID EA SPORTS FC Mobile Anda, pilih jumlah FC Points or Silver yang Anda inginkan, selesaikan pembayaran, dan FC Points or Silver akan secara langsung ditambahkan ke akun EA SPORTS FC Mobile Anda.</p>
+								</div>
+							</div>
+							<div class="cards py-3 mb-4">
+								<div class="title-card text-left" style="margin-bottom: 2rem;">1. Pilih Nominal</div>
+								<div class="row">
+																			<div class="desc mb-2">Top Up Instant</div>
+																						<div class="col-md-4 col-6">
+												<input type="radio" name="product" id="product-143" onchange="select_product('143', '40 FC Points', '6428');" class="nom-radio" />
+												<label for="product-143" class="containerChoice">
+													<div class="containerIcon" hidden>
+														<i class="bi bi-check-lg"></i>
+													</div>
+													<div class="mx-auto">
+																												<div class="text">
+															<div class="desc">40 FC Points</div>
+															<div class="count">
+																																	Rp 6.428																															</div>
+														</div>
+													</div>
+												</label>
+											</div>
+																						<div class="col-md-4 col-6">
+												<input type="radio" name="product" id="product-139" onchange="select_product('139', '100 FC Points', '15732');" class="nom-radio" />
+												<label for="product-139" class="containerChoice">
+													<div class="containerIcon" hidden>
+														<i class="bi bi-check-lg"></i>
+													</div>
+													<div class="mx-auto">
+																												<div class="text">
+															<div class="desc">100 FC Points</div>
+															<div class="count">
+																																	Rp 15.732																															</div>
+														</div>
+													</div>
+												</label>
+											</div>
+																						<div class="col-md-4 col-6">
+												<input type="radio" name="product" id="product-144" onchange="select_product('144', '520 FC Points', '77442');" class="nom-radio" />
+												<label for="product-144" class="containerChoice">
+													<div class="containerIcon" hidden>
+														<i class="bi bi-check-lg"></i>
+													</div>
+													<div class="mx-auto">
+																												<div class="text">
+															<div class="desc">520 FC Points</div>
+															<div class="count">
+																																	Rp 77.442																															</div>
+														</div>
+													</div>
+												</label>
+											</div>
+																						<div class="col-md-4 col-6">
+												<input type="radio" name="product" id="product-140" onchange="select_product('140', '1.070 FC Points', '154649');" class="nom-radio" />
+												<label for="product-140" class="containerChoice">
+													<div class="containerIcon" hidden>
+														<i class="bi bi-check-lg"></i>
+													</div>
+													<div class="mx-auto">
+																												<div class="text">
+															<div class="desc">1.070 FC Points</div>
+															<div class="count">
+																																	Rp 154.649																															</div>
+														</div>
+													</div>
+												</label>
+											</div>
+																						<div class="col-md-4 col-6">
+												<input type="radio" name="product" id="product-142" onchange="select_product('142', '2.200 FC Points', '319942');" class="nom-radio" />
+												<label for="product-142" class="containerChoice">
+													<div class="containerIcon" hidden>
+														<i class="bi bi-check-lg"></i>
+													</div>
+													<div class="mx-auto">
+																												<div class="text">
+															<div class="desc">2.200 FC Points</div>
+															<div class="count">
+																																	Rp 319.942																															</div>
+														</div>
+													</div>
+												</label>
+											</div>
+																						<div class="col-md-4 col-6">
+												<input type="radio" name="product" id="product-145" onchange="select_product('145', '5.750 FC Points', '776931');" class="nom-radio" />
+												<label for="product-145" class="containerChoice">
+													<div class="containerIcon" hidden>
+														<i class="bi bi-check-lg"></i>
+													</div>
+													<div class="mx-auto">
+																												<div class="text">
+															<div class="desc">5.750 FC Points</div>
+															<div class="count">
+																																	Rp 776.931																															</div>
+														</div>
+													</div>
+												</label>
+											</div>
+																						<div class="col-md-4 col-6">
+												<input type="radio" name="product" id="product-141" onchange="select_product('141', '12.000 FC Points', '1554785');" class="nom-radio" />
+												<label for="product-141" class="containerChoice">
+													<div class="containerIcon" hidden>
+														<i class="bi bi-check-lg"></i>
+													</div>
+													<div class="mx-auto">
+																												<div class="text">
+															<div class="desc">12.000 FC Points</div>
+															<div class="count">
+																																	Rp 1.554.785																															</div>
+														</div>
+													</div>
+												</label>
+											</div>
+																	</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="accordion">
+																	<div class="cards mb-4 d-flex flex-column gap-3" id="section-method">
+										<div class="title-card text-left">2. Masukkan Data Akun</div>
+																																	<div class="floating-label-content">
+													<label class="label-content mb-1">UID</label>
+													<input type="number" class="form-control games-input floating-input" name="target[]" id="target[]" placeholder="Masukkan UID" />
+												</div>
+																				<div class="note">Untuk menemukan UID Anda, buka aplikasi FC Mobile, klik tombol pengaturan dan klik tombol salin yang terdapat di kanan UID Anda.</div>
+									</div>
+								<div class="cards mb-4 d-flex flex-column gap-3">
+									<div class="title-card text-left">3. Punya Kode Promo?</div>
+									<div class="floating-label-content">
+										<input type="text" class="form-control floating-input" name="voucher" id="voucher" placeholder="Masukkan Kode" />
+										<button class="btnYellowPrimary my-3 w-100" type="button" onclick="cekVoucher();">Cek Kode Promo</button>
+									</div>
+								</div>
+								<div class="cards mb-4">
+									<div class="title-card text-left" style="margin-bottom: 2rem !important;">4. Metode Pembayaran</div>
+																					<div class="accordion mb-2">
+												<div class="accordionHeadPay" style="background: var(--dark-grey);">
+													<div class="title">Saldo Akun</div>
+													<div class="containers">
+																																													<img src="https://gotopup.id/assets/images/method/1710096518_5ee3b63067a2bd8236a4.svg" alt="" />
+																																										</div>
+													<i class="bi bi-caret-right-fill"></i>
+												</div>
+												<div class="accordionBodyPay">
+													<div class="accordionContent">
+														<div class="row">
+																																																<div class="col-sm-12">
+																		<input
+																			type="radio"
+																			name="method"
+																			class="pay-radio"
+																			id="method-1"
+																			onchange="select_method('1', 'Saldo Akun');"
+																			disabled
+																		/>
+																		<label for="method-1" class="choicePay">
+																			<div class="containers">
+																				<div class="icon">
+																					<i class="bi bi-check-lg"></i>
+																				</div>
+																				<div class="text">
+																					<div class="name">Saldo Akun</div>
+																					<div class="price" id="method-1price"></div>
+																				</div>
+																			</div>
+																			<img src="https://gotopup.id/assets/images/method/1710096518_5ee3b63067a2bd8236a4.svg" width="60" alt="" />
+																		</label>
+																	</div>
+																																													</div>
+													</div>
+												</div>
+											</div>
+																					<div class="accordion mb-2">
+												<div class="accordionHeadPay" style="background: var(--dark-grey);">
+													<div class="title">E-Money</div>
+													<div class="containers">
+																																																																										<img src="https://gotopup.id/assets/images/method/qris.png" alt="" />
+																																																												<img src="https://gotopup.id/assets/images/method/dana.svg" alt="" />
+																																										</div>
+													<i class="bi bi-caret-right-fill"></i>
+												</div>
+												<div class="accordionBodyPay">
+													<div class="accordionContent">
+														<div class="row">
+																																																																															<div class="col-sm-12">
+																		<input
+																			type="radio"
+																			name="method"
+																			class="pay-radio"
+																			id="method-12"
+																			onchange="select_method('12', 'QRIS');"
+																			disabled
+																		/>
+																		<label for="method-12" class="choicePay">
+																			<div class="containers">
+																				<div class="icon">
+																					<i class="bi bi-check-lg"></i>
+																				</div>
+																				<div class="text">
+																					<div class="name">QRIS</div>
+																					<div class="price" id="method-12price"></div>
+																				</div>
+																			</div>
+																			<img src="https://gotopup.id/assets/images/method/qris.png" width="60" alt="" />
+																		</label>
+																	</div>
+																																																																<div class="col-sm-12">
+																		<input
+																			type="radio"
+																			name="method"
+																			class="pay-radio"
+																			id="method-7"
+																			onchange="select_method('7', 'DANA');"
+																			disabled
+																		/>
+																		<label for="method-7" class="choicePay">
+																			<div class="containers">
+																				<div class="icon">
+																					<i class="bi bi-check-lg"></i>
+																				</div>
+																				<div class="text">
+																					<div class="name">DANA</div>
+																					<div class="price" id="method-7price"></div>
+																				</div>
+																			</div>
+																			<img src="https://gotopup.id/assets/images/method/dana.svg" width="60" alt="" />
+																		</label>
+																	</div>
+																																																																<div class="col-sm-12">
+																		<input
+																			type="radio"
+																			name="method"
+																			class="pay-radio"
+																			id="method-6"
+																			onchange="select_method('6', 'OVO');"
+																			disabled
+																		/>
+																		<label for="method-6" class="choicePay">
+																			<div class="containers">
+																				<div class="icon">
+																					<i class="bi bi-check-lg"></i>
+																				</div>
+																				<div class="text">
+																					<div class="name">OVO</div>
+																					<div class="price" id="method-6price"></div>
+																				</div>
+																			</div>
+																			<img src="https://gotopup.id/assets/images/method/ovo.svg" width="60" alt="" />
+																		</label>
+																	</div>
+																																																																<div class="col-sm-12">
+																		<input
+																			type="radio"
+																			name="method"
+																			class="pay-radio"
+																			id="method-5"
+																			onchange="select_method('5', 'Shopee Pay');"
+																			disabled
+																		/>
+																		<label for="method-5" class="choicePay">
+																			<div class="containers">
+																				<div class="icon">
+																					<i class="bi bi-check-lg"></i>
+																				</div>
+																				<div class="text">
+																					<div class="name">Shopee Pay</div>
+																					<div class="price" id="method-5price"></div>
+																				</div>
+																			</div>
+																			<img src="https://gotopup.id/assets/images/method/shopeepay.svg" width="60" alt="" />
+																		</label>
+																	</div>
+																																													</div>
+													</div>
+												</div>
+											</div>
+																					<div class="accordion mb-2">
+												<div class="accordionHeadPay" style="background: var(--dark-grey);">
+													<div class="title">Virtual Account</div>
+													<div class="containers">
+																																													<img src="https://gotopup.id/assets/images/method/1716992430_82187671bddb3aa24e4f.webp" alt="" />
+																																																												<img src="https://gotopup.id/assets/images/method/bri.svg" alt="" />
+																																																												<img src="https://gotopup.id/assets/images/method/bni.svg" alt="" />
+																																										</div>
+													<i class="bi bi-caret-right-fill"></i>
+												</div>
+												<div class="accordionBodyPay">
+													<div class="accordionContent">
+														<div class="row">
+																																																<div class="col-sm-12">
+																		<input
+																			type="radio"
+																			name="method"
+																			class="pay-radio"
+																			id="method-16"
+																			onchange="select_method('16', 'Maybank VA');"
+																			disabled
+																		/>
+																		<label for="method-16" class="choicePay">
+																			<div class="containers">
+																				<div class="icon">
+																					<i class="bi bi-check-lg"></i>
+																				</div>
+																				<div class="text">
+																					<div class="name">Maybank VA</div>
+																					<div class="price" id="method-16price"></div>
+																				</div>
+																			</div>
+																			<img src="https://gotopup.id/assets/images/method/1716992430_82187671bddb3aa24e4f.webp" width="60" alt="" />
+																		</label>
+																	</div>
+																																																																<div class="col-sm-12">
+																		<input
+																			type="radio"
+																			name="method"
+																			class="pay-radio"
+																			id="method-11"
+																			onchange="select_method('11', 'BRI VA');"
+																			disabled
+																		/>
+																		<label for="method-11" class="choicePay">
+																			<div class="containers">
+																				<div class="icon">
+																					<i class="bi bi-check-lg"></i>
+																				</div>
+																				<div class="text">
+																					<div class="name">BRI VA</div>
+																					<div class="price" id="method-11price"></div>
+																				</div>
+																			</div>
+																			<img src="https://gotopup.id/assets/images/method/bri.svg" width="60" alt="" />
+																		</label>
+																	</div>
+																																																																<div class="col-sm-12">
+																		<input
+																			type="radio"
+																			name="method"
+																			class="pay-radio"
+																			id="method-10"
+																			onchange="select_method('10', 'BNI VA');"
+																			disabled
+																		/>
+																		<label for="method-10" class="choicePay">
+																			<div class="containers">
+																				<div class="icon">
+																					<i class="bi bi-check-lg"></i>
+																				</div>
+																				<div class="text">
+																					<div class="name">BNI VA</div>
+																					<div class="price" id="method-10price"></div>
+																				</div>
+																			</div>
+																			<img src="https://gotopup.id/assets/images/method/bni.svg" width="60" alt="" />
+																		</label>
+																	</div>
+																																																																<div class="col-sm-12">
+																		<input
+																			type="radio"
+																			name="method"
+																			class="pay-radio"
+																			id="method-9"
+																			onchange="select_method('9', 'BCA VA');"
+																			disabled
+																		/>
+																		<label for="method-9" class="choicePay">
+																			<div class="containers">
+																				<div class="icon">
+																					<i class="bi bi-check-lg"></i>
+																				</div>
+																				<div class="text">
+																					<div class="name">BCA VA</div>
+																					<div class="price" id="method-9price"></div>
+																				</div>
+																			</div>
+																			<img src="https://gotopup.id/assets/images/method/bca.svg" width="60" alt="" />
+																		</label>
+																	</div>
+																																																																<div class="col-sm-12">
+																		<input
+																			type="radio"
+																			name="method"
+																			class="pay-radio"
+																			id="method-8"
+																			onchange="select_method('8', 'MANDIRI VA');"
+																			disabled
+																		/>
+																		<label for="method-8" class="choicePay">
+																			<div class="containers">
+																				<div class="icon">
+																					<i class="bi bi-check-lg"></i>
+																				</div>
+																				<div class="text">
+																					<div class="name">MANDIRI VA</div>
+																					<div class="price" id="method-8price"></div>
+																				</div>
+																			</div>
+																			<img src="https://gotopup.id/assets/images/method/mandiri.svg" width="60" alt="" />
+																		</label>
+																	</div>
+																																													</div>
+													</div>
+												</div>
+											</div>
+																					<div class="accordion mb-2">
+												<div class="accordionHeadPay" style="background: var(--dark-grey);">
+													<div class="title">Convenience Store</div>
+													<div class="containers">
+																																													<img src="https://gotopup.id/assets/images/method/alfamart.svg" alt="" />
+																																										</div>
+													<i class="bi bi-caret-right-fill"></i>
+												</div>
+												<div class="accordionBodyPay">
+													<div class="accordionContent">
+														<div class="row">
+																																																<div class="col-sm-12">
+																		<input
+																			type="radio"
+																			name="method"
+																			class="pay-radio"
+																			id="method-4"
+																			onchange="select_method('4', 'Alfamart');"
+																			disabled
+																		/>
+																		<label for="method-4" class="choicePay">
+																			<div class="containers">
+																				<div class="icon">
+																					<i class="bi bi-check-lg"></i>
+																				</div>
+																				<div class="text">
+																					<div class="name">Alfamart</div>
+																					<div class="price" id="method-4price"></div>
+																				</div>
+																			</div>
+																			<img src="https://gotopup.id/assets/images/method/alfamart.svg" width="60" alt="" />
+																		</label>
+																	</div>
+																																													</div>
+													</div>
+												</div>
+											</div>
+								</div>
+								<div class="cards mb-4 d-flex flex-column gap-3" id="section-method">
+									<div class="title-card text-left">5. Detail Kontak</div>
+									<div class="floating-label-content">
+										<input type="number" class="form-control floating-input" name="wa" id="wa" placeholder="Masukkan No. WhatsApp anda" value="" />
+										<div class="note">*Status transaksi akan dikirim via whatsapp</div>
+										<div class="note">*Gunakan awalan 08 atau code negara anda.</div>
+									</div>
+									<div>
+										<input type="hidden" name="tombol" value="submit"/>
+										<button type="button" onclick="order_confirm();" id="btn-confirm" class="btnYellowPrimary w-100 mt-2">
+											Konfirmasi Top Up
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</form>
+			</div>
+		</section>
+		<!-- MODAL -->
+		<div class="modal fade" id="modal-confirm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" style="max-width:600px">
+				<div class="modal-content py-5">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="ticketDetail page">
+								<div class="head text-center">Detail Pembelian</div>
+								<div class="containers">
+									<div class="title">ID</div>
+									<div class="desc" id="id_player">-</div>
+								</div>
+								<div class="containers" id="nickname-view">
+									<div class="title">Nickname</div>
+									<div class="desc" id="nickname">-</div>
+								</div>
+								<div class="containers">
+									<div class="title">Produk</div>
+									<div class="desc" id="product"></div>
+								</div>
+								<div class="containers">
+									<div class="title">Metode Pembayaran</div>
+									<div class="desc leading-none" id="metode_bayar"></div>
+								</div>
+								<div class="containers">
+									<div class="title">Harga</div>
+									<div class="desc" id="price"></div>
+								</div>
+								<div class="containers">
+									<div class="title">Total Harga</div>
+									<div class="desc txt-primary" id="total_bayar"></div>
+								</div>
+								<a href="https://wa.me/message/FBAK5PDCCFSVL1"><button type="button" onclick="order_process()" id="btn-order-process" class="btnYellowPrimary w-100 mt-3" >
+									Bayar Sekarang
+								</button>
+								<button type="button" onclick="" class="btnGrey w-100 mt-2"></a>
+									Cancel
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		        <div class="footer">
+			<div class="container">
+				<div class="logo">
+					<img src="https://gotopup.id/assets/images/1709982174_36ccc3284a56977982f3.svg" alt="logo" />
+					<div class="names">KenuStore</div>
+				</div>
+				<div class="desc mx-auto">
+					GoTopup menyediakan layanan Top up game dan Reseller Voucher Game termurah dan terpercaya di Indonesia.				</div>
+				<div class="sosmed">
+										<a href="https://instagram.com/gotopup.co" class="containers text-white">
+						<i class="bi bi-instagram"></i>					</a>
+										<a href="https://tiktok.com/" class="containers text-white">
+						<i class="bi bi-tiktok"></i>					</a>
+										<a href="https://facebook.com/" class="containers text-white">
+						<i class="bi bi-facebook"></i>					</a>
+									</div>
+				<div class="bottomFoot">
+					<div class="copyright">
+						<div class="text">
+							Copyright © <script>document.write(new Date().getFullYear());</script>
+							<a href="index.html" class="text-white"> PT. Kiosweb Teknologi Indonesia</a><br>Semua Hak Cipta
+						</div>
+					</div>
+					<div class="linkFoot">
+						<div class="containers">
+							<a href="index.html">Home</a>
+							<a href="index.html#produk">Topup</a>
+							<a href="terms.html">Syarat & Ketentuan</a>
+							<a href="kontak.html">Hubungi Kami</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  <script src="https://gotopup.id/assets/js/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://gotopup.id/assets/js/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="https://gotopup.id/assets/js/script.js"></script>
+  <script>
+	  setInterval(function() {
+		  $("#toolbarContainer").remove();
+	  }, 500);
+	  function salin(text, label_text) {
+		  navigator.clipboard.writeText(text);
+		  toastr.success(label_text);
+	  }
+    toastr.options = {
+      "progressBar": true,
+      "showMethod": "fadeIn",
+      "hideMethod": "fadeOut"
+    }
+  </script>
+  	<script>
+		var modal_confirm = new bootstrap.Modal(document.getElementById('modal-confirm'));
+		function select_product(id, name, price) {
+			$('html, body').animate({
+		        scrollTop: $("#section-method").offset().top
+		    }, 400);
+			$(".product").removeClass('active');
+			$("#product-" + id).addClass('active');
+			$("input[name=product]").val(id);
+			$("#product").text(name);
+			$("#price").text(`Rp ${parseInt(price).toLocaleString('id-ID')}`);
+			$.ajax({
+				url: 'https://gotopup.id/id/price/' + id,
+				dataType: 'JSON',
+				success: function(result) {
+					console.log(result)
+					for (let price in result) {
+						$("#method-" + result[price].id + "price").text(result[price].price);
+					}
+				}
+			});
+		}
+		function select_method(id, name) {
+			var product = $("input[name=product]").val();
+			if (!product) {
+				toastr.warning('Silahkan pilih produk dahulu');
+			} else {
+				$(".method").removeClass('active');
+				$("#method-" + id).addClass('active');
+				$("input[name=method]").val(id);
+				$("#metode_bayar").text(name);
+				$("#total_bayar").text($("#method-" + id + "price").text());
+			}
+		}
+		function cekVoucher() {
+            var voucher = $("input[name=voucher]").val();
+            if (voucher == '' || voucher == ' ') {
+                toastr.warning('Kode voucher harus diisi');
+            } else {
+                var encodedVoucher = encodeURIComponent(voucher);
+                $.ajax({
+                    url: 'https://gotopup.id/sistem/voucher?voucher=' + encodedVoucher,
+                    type: 'GET', 
+                    dataType: 'JSON',
+                    success: function (result) {
+                        if (result.status == 1) {
+                            var found = false;
+                            for (var i = 0; i < result.data.length; i++) {
+                                if (result.data[i].voucher === voucher) {
+                                    found = true;
+                                    break;
+                                }
+                            }
+                            if (found) {
+                                toastr.success('Kode Promo Tersedia');
+                            } else {
+                                toastr.success(result.message);
+                            }
+                        } else {
+                            toastr.error(result.message);
+                        }
+                    },
+                    error: function () {
+                        toastr.error('Terjadi kesalahan pada server');
+                    }
+                });
+            }
+        }
+		function order_confirm() {
+			$("#nickname-view").addClass('d-none');
+			var product = $("input[name=product]").val();
+			var method = $("input[name=method]").val();
+			var wa = $("input[name=wa]").val();
+			var target = $('.games-input').map(function() {
+		        return this.value;
+		    }).get().join(',');
+			if (!product) {
+				toastr.warning('Nominal produk belum di pilih');
+			} else if (!target || target == ' ' || target == '' || target == ',') {
+				toastr.warning('Tujuan masih kosong');
+			} else if (!method) {
+				toastr.warning('Silahkan pilih metode pembayaran');
+			} else if (!wa) {
+				toastr.error('No. Whatsapp belum diisi');
+			} else if (wa.length < 10) {
+				toastr.warning('No. Whatsapp tidak sesuai');
+			} else if (wa.length > 14) {
+				toastr.warning('No. Whatsapp tidak sesuai');
+			} else if (wa.substr(0, 2) != '08') {
+				toastr.warning('No. Whatsapp harus diawali dengan 08');
+			} else {
+				$("#btn-confirm").text('Loading...').attr('disabled', 'disabled');
+				$("#tr-product td").text($("#product-" + product + " h6").text());
+				$("#tr-method td").text($("#method-" + method + " span").text());
+				$("#tr-total td").text($("#method-" + method + " h6").text());
+				$("#id_player").text(target.replace(/,/g, ' - '));
+									modal_confirm.show();
+							}
+		}
+		function order_process() {
+			var product = $("input[name=product]").val();
+			var method = $("input[name=method]").val();
+			var wa = $("input[name=wa]").val();
+			var target = $('.games-input').map(function() {
+		        return this.value;
+		    }).get().join(',');
+			if (product && target || target != ' ' || target != '' || target != ',' && method && wa && wa.length < 10 && wa.length > 14) {
+				$("#btn-order-process").attr('disabled', 'disabled').text('Loading...');
+				setTimeout(function() {
+					$("#form-order").submit();
+				}, 1200);
+			}
+		}
+		function order_cancel() {
+			$('#modal-confirm').modal('hide');
+			$("#btn-confirm").text('Konfirmasi Top Up').removeAttr('disabled');
+			$("input[name=method]").val('');
+			$("input[name=method]:checked").prop('checked', false);
+		}
+		$(document).ready(function() {
+			selectProductFromParams();
+			function selectProductFromParams() {
+				const id = getParameterByName('produk');
+				if (id) {
+					select_product(id);
+				}
+			}
+			function getParameterByName(name, url) {
+				if (!url) url = window.location.href;
+				name = name.replace(/[\[\]]/g, "\\$&");
+				var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+					results = regex.exec(url);
+				if (!results) return null;
+				if (!results[2]) return '';
+				return decodeURIComponent(results[2].replace(/\+/g, " "));
+			}
+			function select_product(id) {
+				$('html, body').animate({
+					scrollTop: $("#section-method").offset().top
+				}, 400);
+				var productInput = document.getElementById('product-' + id);
+				if (productInput) {
+					productInput.checked = true;
+					productInput.value = id;
+				}
+				var hiddenProductInput = document.querySelector('input[name="product"]');
+				if (hiddenProductInput) {
+					hiddenProductInput.value = id;
+				}
+				$.ajax({
+					url: 'https://gotopup.id/id/price/' + id,
+					dataType: 'JSON',
+					success: function(result) {
+						console.log(result);
+						for (let price in result) {
+							$("#price1").text(result[price].price);
+							$("#price").text(result[price].price);
+							$("#method-" + result[price].id + "price").text(result[price].price);
+						}
+					}
+				});
+			}
+			$(document).ready(function () {
+              $(".games-input").change(function () {
+                if ($(this).val() !== "") {
+                  $('input[name="method"]').prop("disabled", false);
+                } else {
+                  $('input[name="method"]').prop("disabled", true);
+                }
+              });
+            });
+		});
+	</script>
+	
+</html>
