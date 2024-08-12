@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <!-- Logo with link to the main search page -->
+            <a href="index.html" id="logo">
+                <img src="logo.png" alt="My Logo">
+            </a>
+            <!-- Language selector with label -->
+            <label for="languageSelector" id="languageLabel"></label>
+            <select id="languageSelector">
+                <option value="en">EN</option>
+                <option value="id">ID</option>
+                <option value="zh">中文</option>
+                <option value="es">ES</option>
+            </select>
+        </div>
+    </div>
+    <div class="container">
+        <form id="searchForm">
+            <input type="text" id="searchQuery" placeholder="Search articles...">
+            <button type="submit">Search</button>
+        </form>
+<div id="results"></div>
+        <div id="articles">
+            <div class="article">
+                <h2><a href="article1.html">Article Title 1</a></h2>
+                <p>This is a brief description of the first article. It gives readers an idea of what the article is about.</p>
+            </div>
+            <div class="article">
+                <h2><a href="article2.html">Article Title 2</a></h2>
+                <p>This is a brief description of the second article. It provides a summary of the content to engage readers.</p>
+            </div>
+            <div class="article">
+                <h2><a href="article3.html">Article Title 3</a></h2>
+                <p>This is a brief description of the third article. It offers a preview of the information contained within.</p>
+            </div>
+            <!-- Add more articles as needed -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
