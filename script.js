@@ -17,7 +17,7 @@ let currentLanguage = 'en'; // Bahasa default
 const data = {
     en: [
         { title: 'Numini', url: 'index.html' },
-        { title: 'HTML basics', url: 'https://example.com/html-basics' },
+        { title: 'Bola.com', url: 'web.html' },
         { title: 'CSS styling guide', url: 'https://example.com/css-styling-guide' },
         { title: 'Java programming', url: 'https://example.com/java-programming' },
         { title: 'Building a website', url: 'https://example.com/building-a-website' },
@@ -27,6 +27,7 @@ const data = {
     ],
     id: [
         { title: 'Numini', url: 'index.html' },
+        { title: 'Bola.com', url: 'web.html' },
         { title: 'Dasar-dasar HTML', url: 'https://example.com/html-basics' },
         { title: 'Panduan Gaya CSS', url: 'https://example.com/css-styling-guide' },
         { title: 'Pemrograman Java', url: 'https://example.com/java-programming' },
@@ -46,6 +47,7 @@ const data = {
         { title: '全栈指南', url: 'https://example.com/fullstack-guide' }
     ],
     es: [
+        { title: 'Bola.com', url: 'web.html' },
         { title: 'Numini', url: 'index.html' },
         { title: 'Conceptos básicos de HTML', url: 'https://example.com/html-basics' },
         { title: 'Guía de estilo CSS', url: 'https://example.com/css-styling-guide' },
