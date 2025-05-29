@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen font-sans antialiased">
+
+    <div id="app" class="flex flex-col flex-grow w-full max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+
+        <header class="bg-white p-4 border-b border-gray-200 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-red-500">TikTok Clone</h1>
+            <div id="auth-status" class="text-sm text-gray-600"></div>
+        </header>
+
+        <main id="main-content" class="flex-grow overflow-y-auto relative">
+            <section id="video-feed-section" class="hidden h-full">
+                <div id="video-feed" class="flex flex-col items-center h-full overflow-y-auto snap-y snap-mandatory">
+                    <div class="text-center p-4 text-gray-500">Loading videos...</div>
+                </div>
+            </section>
+
+            <section id="upload-section" class="hidden p-6 flex flex-col items-center justify-center h-full">
+                <h2 class="text-2xl font-semibold mb-6 text-gray-800">Upload Your Video</h2>
+                <input type="file" id="video-file-input" accept="video/*" class="mb-4 p-3 border border-gray-300 rounded-md w-full max-w-xs">
+                <textarea id="video-description-input" placeholder="Add a description..." class="mb-4 p-3 border border-gray-300 rounded-md w-full max-w-xs h-24 resize-none"></textarea>
+                <button id="upload-video-button" class="bg-red-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-red-600 transition duration-300 ease-in-out">
+                    Upload Video
+                </button>
+                <div id="upload-status" class="mt-4 text-sm text-gray-600"></div>
+            </section>
+
+            <section id="profile-section" class="hidden p-6 flex flex-col items-center h-full overflow-y-auto">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800">Your Profile</h2>
+                <p id="profile-email" class="text-lg text-gray-700 mb-2"></p>
+                <p id="profile-uid" class="text-sm text-gray-500 mb-4"></p>
+
+                <div class="w-full max-w-xs mb-6">
+                    <label for="bio-input" class="block text-gray-700 text-sm font-bold mb-2">Bio:</label>
+                    <textarea id="bio-input" placeholder="Tell us about yourself..." class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-24 resize-none"></textarea>
+                    <button id="save-bio-button" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-600 transition duration-300 ease-in-out w-full">
+                        Save Bio
+                    </button>
+                    <p id="bio-status" class="text-sm text-gray-600 mt-2"></p>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-4 text-gray-800">Your Uploaded Videos</h3>
+                <div id="uploaded-videos-grid" class="grid grid-cols-2 gap-4 w-full max-w-md">
+                    <p class="text-gray-500 text-center col-span-2">No videos uploaded yet.</p>
+                </div>
+
+                <button id="sign-out-button" class="mt-8 bg-gray-700 text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-800 transition duration-300 ease-in-out">
+                    Sign Out
+                </button>
+            </section>
+
+            <section id="search-section" class="hidden p-6 flex flex-col items-center h-full overflow-y-auto">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800">Search Videos & Accounts</h2>
+                <input type="text" id="search-input" placeholder="Search videos or accounts..." class="mb-4 p-3 border border-gray-300 rounded-md w-full max-w-xs">
+                <button id="search-button" class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition duration-300 ease-in-out">
+                    Search
+                </button>
+                <div id="search-results" class="mt-6 w-full max-w-md">
+                    <p class="text-gray-500 text-center">No results yet. Try searching!</p>
+                </div>
+            </section>
+
+        </main>
+
+        <nav id="bottom-nav" class="bg-white border-t border-gray-200 flex justify-around items-center p-3">
+            <button id="nav-home" class="flex flex-col items-center text-gray-600 hover:text-red-500 transition duration-200 ease-in-out">
+                <i class="fas fa-home text-xl"></i>
+                <span class="text-xs mt-1">Home</span>
+            </button>
+            <button id="nav-search" class="flex flex-col items-center text-gray-600 hover:text-red-500 transition duration-200 ease-in-out">
+                <i class="fas fa-search text-xl"></i>
+                <span class="text-xs mt-1">Search</span>
+            </button>
+            <button id="nav-upload" class="flex flex-col items-center text-gray-600 hover:text-red-500 transition duration-200 ease-in-out">
+                <i class="fas fa-plus-square text-xl"></i>
+                <span class="text-xs mt-1">Upload</span>
+            </button>
+            <button id="nav-profile" class="flex flex-col items-center text-gray-600 hover:text-red-500 transition duration-200 ease-in-out">
+                <i class="fas fa-user text-xl"></i>
+                <span class="text-xs mt-1">Profile</span>
+            </button>
+        </nav>
+
+        <div id="auth-modal" class="modal-overlay hidden">
+            <div class="modal-content w-full max-w-sm">
+                <span id="close-auth-modal" class="close-button">&times;</span>
+                <h2 id="auth-title" class="text-2xl font-semibold mb-6 text-gray-800 text-center">Login</h2>
+
+                <div class="mb-4">
+                    <label for="auth-email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                    <input type="email" id="auth-email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Email">
+                </div>
+                <div class="mb-6">
+                    <label for="auth-password" class="block text-gray-700 text-sm font-bold mb-2">Password:</label>
+                    <input type="password" id="auth-password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Password">
+                </div>
+                <div id="auth-error" class="text-red-500 text-sm mb-4 hidden"></div>
+
+                <div class="flex items-center justify-between">
+                    <button id="auth-submit-button" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300 ease-in-out w-full">
+                        Login
+                    </button>
+                </div>
+                <div class="mt-4 text-center">
+                    <button id="toggle-auth-mode" class="text-blue-500 hover:text-blue-700 text-sm">
+                        Don't have an account? Register
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="message-modal" class="modal-overlay hidden">
+            <div class="modal-content w-full max-w-sm text-center">
+                <span id="close-message-modal" class="close-button">&times;</span>
+                <p id="message-text" class="text-lg text-gray-800 mb-4"></p>
+                <button id="message-ok-button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300 ease-in-out">
+                    OK
+                </button>
+            </div>
+        </div>
+
+        <div id="comments-modal" class="modal-overlay hidden">
+            <div class="modal-content w-full max-w-md">
+                <span id="close-comments-modal" class="close-button">&times;</span>
+                <h3 class="text-xl font-semibold mb-4 text-gray-800">Comments</h3>
+                <div id="comments-list" class="max-h-60 overflow-y-auto border border-gray-200 rounded-md p-3 mb-4">
+                    </div>
+                <div class="flex">
+                    <input type="text" id="comment-input" placeholder="Add a comment..." class="flex-grow p-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-red-500">
+                    <button id="post-comment-button" class="bg-red-500 text-white px-4 py-2 rounded-r-md hover:bg-red-600 transition duration-300 ease-in-out">
+                        Post
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

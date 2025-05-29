@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Siswa</title>
+</head>
+<body>
+  <h2>Selamat Datang, <span id="user"></span>!</h2>
+  <button onclick="logout()">Logout</button>
+
+  <script>
+    const loggedIn = localStorage.getItem("loggedIn");
+    const username = localStorage.getItem("username");
+
+    if (loggedIn !== "true") {
+      window.location.href = "index.html";
+    } else {
+      document.getElementById("user").innerText = username;
+    }
+
+    function logout() {
+      localStorage.clear();
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
